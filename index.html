@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <br />
+    <br />
+    <h1><center>Login</center></h1>
+
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 col-md-4 offset-md-4">
+        <br />
+
+        <!--login form begin-->
+        <form name="login" id="login" method="post" action="authenticate-user.php">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Username</span>
+            <input type="text" name="username" class="form-control" placeholder="Enter Username" aria-describedby="basic-addon1">
+          </div>
+
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Password</span>
+            <input type="password" name="password" class="form-control" placeholder="Enter Password" aria-describedby="basic-addon1">
+          </div>
+          <br />
+          <center>
+            <button class="btn btn-primary" type="button" onclick="authenticate()">
+              Login
+            </button>
+          </center>
+        </form>
+        <!--login form end-->
+
+      </div>
+    </div>
+    <script src="js/authenticate.js">
+
+
+    </script>
+  </body>
+
+</html>
